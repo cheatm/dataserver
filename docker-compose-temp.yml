@@ -1,0 +1,9 @@
+version: '3'
+services:
+  dataserver:
+    build: .
+    image: "dataserver"
+    network_mode: "host"
+    volumes:
+      - ./log:/dataserver/log
+      - ./etc:/dataserver/etc
