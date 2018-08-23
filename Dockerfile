@@ -1,6 +1,6 @@
-FROM java:8u111
+FROM openjdk:8u181
 
-ADD . /app 
-WORKDIR /app
+add . /dataserver
+WORKDIR /dataserver
 
 CMD bin/dataserver dev start
